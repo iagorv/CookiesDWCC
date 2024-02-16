@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Cookies con Formulario</title>
+
+</head>
+
+<body>
+
+    <h1>Configuración de Preferencias</h1>
+
+    <form id="preferencesForm">
+        <label for="idioma">Idioma:</label>
+        <input type="text" id="idioma" name="idioma" required>
+        <br>
+        <label for="tema">Tema (oscuro, claro, etc.):</label>
+        <input type="text" id="tema" name="tema" required>
+        <br>
+        <label for="usuario">Nombre de Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required>
+        <br>
+        <label for="edad">Edad</label>
+        <input type="text" id="edad" name="edad" required>
+        <br>
+        <label for="preferencia">Preferencia (alta, baja, etc.):</label>
+        <input type="text" id="preferencia" name="preferencia" required>
+        <br>
+        <button type="button" onclick="saveUserPreferences()">Guardar Preferencias</button>
+    </form>
+
+    <div id="cookiesContainer"></div>
+
+    <script src="Cookies.js"></script>
+</body>
+
+</html>
